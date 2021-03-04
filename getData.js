@@ -36,12 +36,15 @@ function renderArticle(articleData) {
     const article = document.createElement("div");
     const articleTitle = document.createElement("h3");
     const articleContent = document.createElement("p");
+    const removeButton = document.createElement("buttton");
 
     article.appendChild(articleTitle);
     article.appendChild(articleContent);
+    article.appendChild(removeButton);
 
     articleListHtml.appendChild(article);
 
     articleTitle.innerText = articleData.title;
     articleContent.innerText = articleData.content;
+    removeButton.innerText = "remove article"t;
 }
