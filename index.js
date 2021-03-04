@@ -1,2 +1,5 @@
-document.querySelector('.first-paragraph').addEventListener('click', function() {console.log("click");
+document
+.querySelector('.first-paragraph')
+.addEventListener('click', function () {
+    console.log("click on paragraph");
 });
