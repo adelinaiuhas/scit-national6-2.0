@@ -36,7 +36,11 @@ function renderArticle(articleData) {
     const article = document.createElement("div");
     const articleTitle = document.createElement("h3");
     const articleContent = document.createElement("p");
-    const removeButton = document.createElement("buttton");
+    const removeButton = document.createElement("button");
+
+    removeButton.addEventListener('click' , function() {
+        article.remove();S
+    })
 
     article.appendChild(articleTitle);
     article.appendChild(articleContent);
@@ -46,5 +50,5 @@ function renderArticle(articleData) {
 
     articleTitle.innerText = articleData.title;
     articleContent.innerText = articleData.content;
-    removeButton.innerText = "remove article"t;
+    removeButton.innerText = "remove article";
 }
