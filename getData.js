@@ -39,7 +39,7 @@ function renderArticle(articleData) {
     const removeButton = document.createElement("button");
 
     removeButton.addEventListener('click' , function() {
-        article.remove();S
+        article.remove();
     })
 
     article.appendChild(articleTitle);
